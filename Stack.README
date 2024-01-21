@@ -1,0 +1,69 @@
+DATA STRUCTURES IN PYTHON
+
+Stack:
+      * Stack is a Lifo datastructures (Last in First out)
+      * Stack stores object into a sort of vertical tower
+
+Advantage of Stack:
+      * Undo/redo features in text editor
+      * Moving Back/Forward through browser history
+      * Backtracking Algorithm (Maze,File Directories)
+      * Calling Functions(Call Stack) 
+      * Easy to understand and use
+      * Inorder to reverse the order of element we use stack data STRUCTURES
+
+DisAdvantage of Stack:
+      * Restrictions in Size in Stack .If they are full .You cant add any more element to the Stack
+      * Does not provide fast access either the topmost of the element
+      * Stack does not support efficient searching      
+
+Functions:
+      * Push() - Add a element to the Stack
+      * Pop()  - Removing element to the Stack
+      * Peek() - Display the element of the Stack
+      * Search()  - Search for an onject position
+      * Empty()- Stack is Empty
+      * Size() - Size of Stack()
+      * Top()  - Topmost element of the Stack
+
+Implementation:
+      * List
+      * Collections.deque
+      * queue.LifoQueue 
+
+Time Complexity:
+      0(1) 
+
+Stack Implementation Using Collections.deque:
+      * Python stack can be implemented using the deque class from the Collections module
+      * Deque preferred the list in the cases
+      * we need to quicker append and pop operation both the ends of the container
+      * Deque provides 0(1) time Complexity for append and pop operation as compared to list
+
+
+Implementation using queue module:
+      * Queue module is basically LIFO Queue
+      * Data inserted into Queue using the Put() Functions
+      * Data takes out from get() Functions
+      * Various others Functions available in the module
+            1. maxsize = No.of Items allowed in the queue
+            2. empty() = Return True if the queue is empty otherwise False
+            3. full()  = Return True if the maxsize item in the queue.if the queue was intialized as maxsize = 0 (default),then full never returns True
+            4. get()   = Removing and returning an item from the queue .if the queue is an empty wait until the item is available
+            5. get_nowait() = Return item when its avaiable or else return empty stack
+            6. put(item)= Put a item into queue .if the queue is full.wait until free slot is available before adding an item
+            7. put_nowait() = put an item into queue without blocking. if no free slot is available before adding this item.Raise Queue is full
+            8. qsize() = Return the number of item into queue 
+
+Implementation using Single linked list:
+      * The Linked list has two methods:
+            1. addHead(item)
+            2. removeHead()
+      * Runs on constant time
+      * Functions:
+            1. getSize()
+            2. isEmpty()
+            3. peek()
+            4. push(value)
+            5. pop()
+
